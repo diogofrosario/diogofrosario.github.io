@@ -5,6 +5,7 @@ export default function Home() {
     <main className="h-full font-mono">
       <Header />
       <Intro />
+      <About />
     </main>
   );
 }

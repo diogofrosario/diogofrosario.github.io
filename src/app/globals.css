@@ -32,6 +32,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   max-height: 100vh;
   height: 100%;
@@ -59,4 +63,15 @@ html, body {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
+}
+
+.header-btns {
+  transition: background-color 0.5s ease;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.header-btns:hover {
+  background-color: rgb(var(--background-end-rgb));
+  color: rgb(var(--foreground-rgb));
 }
