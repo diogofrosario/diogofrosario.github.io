@@ -12,15 +12,15 @@ export function Header() {
   };
 
   return (
-    <div className="flex flex-row items-center justify-center h-50 w-full p-4 m-1 text-xl gap-16 font-mono sticky top-1">
+    <div className="flex flex-row items-center justify-center h-50 w-full p-4 text-xl gap-16 font-mono bg-white fixed">
       <div className="header-btns cursor-pointer">
         <a href="#about">About</a>{" "}
       </div>
       <div className="header-btns cursor-pointer">
-        <a href="#skills">Skills</a>{" "}
+        <a href="#timeline">Timeline</a>{" "}
       </div>
       <div className="header-btns cursor-pointer">
-        <a href="#experience">Experience</a>{" "}
+        <a href="#skills">Skills</a>{" "}
       </div>
       <div className="header-btns cursor-pointer">
         <a href="#education">Education</a>{" "}
@@ -76,15 +76,15 @@ export function Intro() {
 
 export function About() {
   return (
-    <div className="flex flex-col bg-gray-400 h-screen w-full p-2" id="about">
+    <div className="flex flex-col bg-gray-200 h-screen w-full p-2" id="about">
       {/* top part */}
-      <div className="flex flex-row gap-x-8 m-10">
+      <div className="flex flex-row gap-x-8 m-10 pt-10">
         <Image
           src="/running_pic.jpg"
           width={300}
           height={300}
           alt="Picture of the author running"
-          className="rounded-full border-4 border-white"
+          className="rounded-full shadow-2xl"
         />
         <div className="space-y-5">
           <p className="font-bold text-2xl">Diogo Rosário</p>
@@ -98,9 +98,9 @@ export function About() {
             Mathematics and Computer Science at the University of Minho.
           </p>
           <p>
-            My interests are Computer Science and Mathematics & Statistics,
-            these interests come together with my passion for Machine Learning
-            and Data Science.
+            My interests are Computer Science, Mathematics & Statistics. These
+            interests come together with my passion for Machine Learning and
+            Data Science.
           </p>
           <ul className="list-disc">
             {" "}
@@ -109,10 +109,11 @@ export function About() {
             <li className="ml-12">Bsc in Applied Statistics</li>
           </ul>
           <p>
-            I spend most of my free time doing competitive long-distance running and have been doing it for the
-            last 13 years. I have represented Portugal in the European Junior
-            Championships in Athletics in 2019 and I have been a national
-            champion once along with a lot of other podium finishes.
+            I spend most of my free time doing competitive long-distance running
+            and have been doing it for the last 13 years. I have represented
+            Portugal in the European Junior Championships in Athletics in 2019
+            and I have been a national champion once along with a lot of other
+            podium finishes.
           </p>
         </div>
       </div>
@@ -121,3 +122,54 @@ export function About() {
     </div>
   );
 }
+
+export function Timeline() {
+  return (
+    <div className="timeline h-auto w-full p-16" id="timeline">
+      <div className="container left">
+        <div className="content">
+          <h2>2019-Present</h2>
+          <h3 className="text-yellow-400 font-bold">University of Minho</h3>
+          <p>Bsc Applied Statistics & Msc Mathematics & Computer Science</p>
+        </div>
+      </div>
+      <div className="container right">
+        <div className="content">
+          <h2>Summer 2021</h2>
+          <h3 className="text-yellow-400 font-bold">Anybrain</h3>
+          <p>Data Science Intern</p>
+        </div>
+      </div>
+      <div className="container left">
+        <div className="content">
+          <h2>March 2022 - July 2022</h2>
+          <h3 className="text-yellow-400 font-bold">Natixis</h3>
+          <p>Data Science Intern</p>
+        </div>
+      </div>
+      <div className="container right">
+        <div className="content">
+          <h2>November 2022 - February 2023</h2>
+          <h3 className="text-yellow-400 font-bold">Issuu</h3>
+          <p>Data Labeler Intern</p>
+        </div>
+      </div>
+      <div className="container left">
+        <div className="content">
+          <h2>March 2023 - May 2024</h2>
+          <h3 className="text-yellow-400 font-bold">Issuu</h3>
+          <p>Data Science Intern</p>
+        </div>
+      </div> 
+      <div className="container right">
+        <div className="content">
+          <h2>May 2024 - Present</h2>
+          <h3 className="text-yellow-400 font-bold">Issuu</h3>
+          <p>Machine Learning Engineer</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function Skills() {}
