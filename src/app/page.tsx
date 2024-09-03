@@ -7,7 +7,7 @@ export default function Home() {
       <Intro />
       <About />
       <Timeline />
-      <Skills />
+      {/* <Skills /> */}
     </main>
   );
 }
