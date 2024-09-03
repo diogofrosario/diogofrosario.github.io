@@ -172,4 +172,10 @@ export function Timeline() {
   );
 }
 
-export function Skills() {}
+export function Skills() {
+  return (
+    <div className="h-screen w-full">
+      
+    </div>
+  )
+}
