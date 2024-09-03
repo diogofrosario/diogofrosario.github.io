@@ -12,7 +12,7 @@ export function Header() {
   };
 
   return (
-    <div className="flex flex-row items-center justify-center h-50 w-full p-4 text-xl gap-16 font-mono bg-white fixed">
+    <div className="flex flex-row items-center justify-center h-50 w-full p-4 text-xl gap-16 font-mono bg-white fixed z-50">
       <div className="header-btns cursor-pointer">
         <a href="#about">About</a>{" "}
       </div>
@@ -125,7 +125,7 @@ export function About() {
 
 export function Timeline() {
   return (
-    <div className="timeline h-auto w-full p-16" id="timeline">
+    <div className="timeline h-screen w-full" id="timeline">
       <div className="container left">
         <div className="content">
           <h2>2019-Present</h2>
@@ -174,8 +174,8 @@ export function Timeline() {
 
 export function Skills() {
   return (
-    <div className="h-screen w-full">
-      
+    <div className="bg-black text-white h-screen w-full" id="skills">
+      <p>skills</p>
     </div>
   )
 }

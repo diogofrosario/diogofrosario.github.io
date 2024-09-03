@@ -91,6 +91,7 @@ body {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 12rem;
 }
 
 /* The actual timeline (the vertical ruler) */
