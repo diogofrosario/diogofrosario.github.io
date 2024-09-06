@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import SocialIcon from "./SocialIcons";
-import React from "react";
+import React, { useState } from "react";
 
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import { FaPython, FaLinux, FaAws } from "react-icons/fa";
@@ -45,7 +45,7 @@ export function Header() {
 
 export function Intro() {
   return (
-    <div className="flex justify-center h-screen bg-black text-white">
+    <div className="flex justify-center h-screen bg-black text-white" id="intro">
       <div className="grid grid-cols-3 h-full w-full">
         {/* First Column */}
         <div className="flex flex-col items-center justify-center space-y-3">
@@ -61,11 +61,13 @@ export function Intro() {
         {/* Second Column */}
         <div className="flex flex-col items-center justify-center space-y-5">
           <div className="typewriter">
-            <h3 className="text-lg">Machine Learning Engineer</h3>
+            <h3 className="text-2xl">Machine Learning Engineer & Data Scientist</h3>
           </div>
+            <h5 className="text-sm text-center">Natural Language Processing, Computer Vision, Time Series, and more</h5>
           <div className="flex flex-row items-center space-x-4">
             <SocialIcon type="linkedin" size="large" color="steel blue" />
             <SocialIcon type="github" size="large" />
+            <SocialIcon type="email" size="large" />
           </div>
         </div>
 
