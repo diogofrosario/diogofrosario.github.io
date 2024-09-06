@@ -12,6 +12,7 @@ import {
   SiTensorflow,
   SiHuggingface,
   SiScikitlearn,
+  SiJupyter,
 } from "react-icons/si";
 
 import SkillCard from "./SkillCard";
@@ -176,19 +177,20 @@ export function Timeline() {
 export function Skills() {
   return (
     <div className="bg-black text-white h-screen w-full p-4" id="skills">
-      <p>Skills:</p>
-      <div className="grid grid-cols-3 gap-4 mt-10 pl-10 border-2 rounded-lg w-4/5 center">
+      <p>Main Tools & Technologies:</p>
+      <div className="grid grid-cols-3 gap-4 mt-10 w-1/2 mx-auto">
         <SkillCard Icon={FaPython} skillName="Python" />
         <SkillCard Icon={SiPytorch} skillName="Pytorch" />
         <SkillCard Icon={SiTensorflow} skillName="Tensorflow" />
-        <SkillCard Icon={FaLinux} skillName="Linux" />
         <SkillCard
           Icon={SiHuggingface}
           skillName="Huggingface & Transformers"
         />
         <SkillCard Icon={SiScikitlearn} skillName="Scikit-learn" />
-        <SkillCard Icon={SiRstudioide} skillName="R" />
+        <SkillCard Icon={FaLinux} skillName="Linux" />
         <SkillCard Icon={FaAws} skillName="AWS" />
+        <SkillCard Icon={SiRstudioide} skillName="R" />
+        <SkillCard Icon={SiJupyter} skillName="Jupyter" />
       </div>
     </div>
   );
