@@ -5,10 +5,20 @@ import SocialIcon from "./SocialIcons";
 import React from "react";
 
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
+import { FaPython, FaLinux, FaAws } from "react-icons/fa";
+import {
+  SiPytorch,
+  SiRstudioide,
+  SiTensorflow,
+  SiHuggingface,
+  SiScikitlearn,
+} from "react-icons/si";
+
+import SkillCard from "./SkillCard";
 
 export function Header() {
   const openPDF = () => {
-    window.open("/CV - Diogo Rosário.pdf", "_blank");
+    window.open("/CV-Diogo_Rosario.pdf", "_blank");
   };
 
   return (
@@ -50,16 +60,7 @@ export function Intro() {
         {/* Second Column */}
         <div className="flex flex-col items-center justify-center space-y-5">
           <div className="typewriter">
-            <h3 className="text-lg">
-              Machine Learning Engineer @{" "}
-              <a
-                className="underline cursor-pointer"
-                href="https://www.issuu.com"
-                target="_blank"
-              >
-                Issuu
-              </a>{" "}
-            </h3>
+            <h3 className="text-lg">Machine Learning Engineer</h3>
           </div>
           <div className="flex flex-row items-center space-x-4">
             <SocialIcon type="linkedin" size="large" color="steel blue" />
@@ -160,7 +161,7 @@ export function Timeline() {
           <h3 className="text-yellow-400 font-bold">Issuu</h3>
           <p>Data Science Intern</p>
         </div>
-      </div> 
+      </div>
       <div className="container right">
         <div className="content">
           <h2>May 2024 - Present</h2>
@@ -174,8 +175,21 @@ export function Timeline() {
 
 export function Skills() {
   return (
-    <div className="bg-black text-white h-screen w-full" id="skills">
-      <p>skills</p>
+    <div className="bg-black text-white h-screen w-full p-4" id="skills">
+      <p>Skills:</p>
+      <div className="grid grid-cols-3 gap-4 mt-10 pl-10 border-2 rounded-lg w-4/5 center">
+        <SkillCard Icon={FaPython} skillName="Python" />
+        <SkillCard Icon={SiPytorch} skillName="Pytorch" />
+        <SkillCard Icon={SiTensorflow} skillName="Tensorflow" />
+        <SkillCard Icon={FaLinux} skillName="Linux" />
+        <SkillCard
+          Icon={SiHuggingface}
+          skillName="Huggingface & Transformers"
+        />
+        <SkillCard Icon={SiScikitlearn} skillName="Scikit-learn" />
+        <SkillCard Icon={SiRstudioide} skillName="R" />
+        <SkillCard Icon={FaAws} skillName="AWS" />
+      </div>
     </div>
-  )
+  );
 }
